@@ -130,7 +130,7 @@ input[type=checkbox]{
   display: block;
  }
  .dropdown {
-  left: 50%;
+  left: 25%;
   top: 30px;
   transform: translateX(35%);
  }
