@@ -30,6 +30,7 @@ img {
   padding: 20px;
   background-color: #C2622E;
   color: #fff;
+  z-index: 1;
 }
 
 .nav-links a {
@@ -70,6 +71,7 @@ img {
   display: none;
   border-radius: 8px;
   top: 35px;
+  z-index: 1;
 }
 
 .dropdown li + li {
@@ -139,12 +141,12 @@ input[type=checkbox]{
 /*RESPONSIVE NAVBAR MENU ENDS*/
 
 
-
+/* COONTAINER STARTS */
 .container {
   padding: 40px 5%;
 }
 
-/* Style the search box inside the navigation bar */
+/* Style the search box */
 .container input[type=text] {
   float: right;
   padding: 6px;
@@ -171,6 +173,7 @@ input[type=checkbox]{
 
 /* Responsive image gallery rules begin*/
 .image-gallery {
+  padding: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -178,14 +181,14 @@ input[type=checkbox]{
 }
 
 .image-gallery > li {
-  flex-basis: 350px; /*width: 350px;*/
+  flex-basis: 300px; /*width: 300px;*/
   position: relative;
   cursor: pointer;
 }
 
 .image-gallery::after {
   content: "";
-  flex-basis: 350px;
+  flex-basis: 300px;
 }
 
 .image-gallery li img {
