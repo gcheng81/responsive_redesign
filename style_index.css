@@ -14,9 +14,6 @@ body {
     font-family: 'Lora', serif;
 }
 
-
-
-
 .responsive {
     
     padding: 5px;
@@ -30,9 +27,6 @@ body {
     height: auto;
 }
 
-li {
-    list-style: none;
-  }
 
 .ap-gallery {
     display: flex;
@@ -64,7 +58,7 @@ li {
     text-align: center;
 }
 
-.lowfi {
+.fi-image {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -72,14 +66,15 @@ li {
 }
   
   
-.lowfi > li {
+.fi-image > li {
     flex-basis: 600px;
     cursor: pointer;
     position: relative;
+    list-style: none;
 }
  
   
-.lowfi li img {
+.fi-image li img {
     object-fit: cover;
     width: 100%;
     height: 100%;

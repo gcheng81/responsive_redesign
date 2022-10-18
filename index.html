@@ -33,43 +33,58 @@
 						I need to look in the long dish list, which is quite annoying. </li>
 					<li>Photo album. Some photos have captions with the name of the dish, while most images don't. 
 						There are even several identical images.</li>
-					<li>The order page doesn’t minimize user’s memory load. There is only text for each dish. 
+						<img class="text-img" src="bad phone album.png" alt="" />
+					<li>The Menu page doesn’t minimize user’s memory load. There is only text for each dish. 
 						The corresponding image is in another page. If the user want to know what Wonto Soup looks like, 
 						he need to recall or look at the image in the Photo album page and then go back to order. 
 						Instead, if a user click the name of a dish, it would be better to display its image and order options.</li>
 					<li>Payment methods indicated by the pictures and text are inconsistent. The payment methods shown in the pictures are 
 						credit card and cash, while the payment methods indicated by the text are WeChat, Alipay, credit card and BOA transfer.</li>
+						<img class="text-img" src="inconsistent payment methods.png" alt="" />
 					<li>Low flexibility and efficiency of use. The website doesn’t allow users to tailor frequent actions. 
 						There is no option for user to perform the same order as last time.</li>
 					<li>No error prevention. If the user clicks the delete button by mistake, 
-						there is no confirmation message before the action is performed. </li> 
-					<li> Low user control and freedom. Users can’t undo deletions or redo additions.</li> 
+						there is no confirmation message before the action is performed. </li>  
 				</ol>
 
 				<h3 class="problem-title">3) Accessibility</h3>
-
 				<ul class="ap-gallery">            
 					<li><img src="ap1.png" alt="" /></li>
 					<li><img src="ap2.png" alt="" /></li>
 					<li><img src="ap3.png" alt="" /></li>
 					<li><img src="ap4.png" alt="" /></li>
 				</ul>
+				<p>I agree with the problems detected.</p>
+				<ol>
+					<li>The images of checkout option don’t have alternative text. Adding alternative text to image is important. 
+						Because it can pass the content of an image to a blind person using a screen reader. It is useful for a 
+						sighted person when the image fails to load. It is also used for search engine trying to understand the 
+						content of a web page.</li>
+					<li>The opening hours table has broken ARIA reference problem. Without an ARIA reference target, 
+						a screen readers won't recognize these relationships, and blind users may miss key information.</li>
+					<li>The main Menu part doesn’t have sufficient contrast between text and its background color. 
+						<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">According to WCAG 2.0, </a> 
+						the contrast ratio between text and its background should be at least 4.5 : 1. In the main Menu part, 
+						the background color is #FAD3C7, the text color is #E04406, their contrast ratio is 3.04:1. 
+						This is not friendly to users with color blindness or low vision.</li>
+					<li>There are redundant links in the main Menu part. The image and text lead to the same address.</li>
+				</ol>
 		</article>
 
 		<article class="part2">
 			<h2 class="part-title">Part 2: Visual Redesign</h2>
 			<h3 class="problem-title">1) Low-fidelity Wireframing</h3>
-			<ul class="lowfi">            
+			<ul class="fi-image">            
 				<li>
-					<img src="lofi-desktop.png" alt="" />
+					<img src="lowfi-desktop.png" alt="" />
 					<div class="name">Desktop</div>
 				</li>
 				<li>
-					<img src="lofi-tablet.png" alt="" />
+					<img src="lowfi-tablet.png" alt="" />
 					<div class="name">Tablet</div>
 				</li>
 				<li>
-					<img src="lofi-phone.png" alt="" />
+					<img src="lowfi-phone.png" alt="" />
 					<div class="name">Phone</div>
 				</li>
 			</ul>
@@ -78,7 +93,7 @@
 			<img class="responsive" src="vs_guide.png" alt="" />
 
 			<h3 class="problem-title">3) High-Fidelity Prototyping</h3>
-			<ul class="lowfi">            
+			<ul class="fi-image">            
 				<li>
 					<img src="highfi-Mac.png" alt="" />
 					<div class="name">Desktop</div>

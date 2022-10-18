@@ -47,6 +47,7 @@ img {
   display: flex;
   gap: 1em;
   font-size: calc(18px + 0.390625vw);
+  
 }
 
 .menu li:hover {
@@ -182,7 +183,6 @@ input[type=checkbox]{
 }
 
 
-
 /* Responsive image gallery rules begin*/
 .image-gallery {
   padding: 25px;
@@ -216,6 +216,7 @@ input[type=checkbox]{
   text-align: center;
   font-size: calc(15px + 0.390625vw);
 }
+
 
 /* hover */
 .image-gallery li:hover .overlay {
