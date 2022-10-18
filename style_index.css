@@ -9,6 +9,13 @@
     width: 80%;
 }
 
+.part-title{
+    padding-top: 50px;
+}
+
+.problem-title{
+    padding-top: 20px;
+}
 
 body {
     font-family: 'Lora', serif;
@@ -19,14 +26,15 @@ body {
 }
 
 .responsive {
-    
-    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     width: 100%;
     height: auto;
 }
 
 .text-img {
-    padding: 5px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     width: 100%;
     height: auto;
 }
